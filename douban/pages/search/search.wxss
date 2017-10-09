@@ -1,0 +1,70 @@
+/* pages/search/search.wxss */
+input{
+  border: 1px solid black;
+  margin-left: 50rpx;
+  margin-top: 50rpx;
+  width: 75%;
+  padding: 30rpx;
+
+}
+
+button{
+  width: 30%;
+  margin-top: 30rpx;
+  margin-left: 200rp;
+
+}
+
+
+
+.moviesList{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 60rpx;
+  padding-top: 20rpx;
+  border-bottom: 1px solid gray;
+}
+
+.moviesText{
+    display: flex;
+     flex-direction: column;
+     margin-left: 30rpx;
+     margin-top: 20rpx;
+
+}
+
+.moviesContents{
+  display: flex;
+  flex-direction: row;
+}
+.moviesText>text:first-child{
+  color: gray;
+}
+.moviesText>text:nth-child(2){
+  font-size: 35rpx;
+  color: gray;
+}
+.moviesText>text:last-child{
+  font-size: 35rpx;
+  color: gray;
+}
+
+.average{
+  width: 100rpx;
+  height: 50rpx;
+  border-radius: 30%;
+  background: orangered;
+  color: white;
+}
+.average>text{
+  font-size: 18px;
+  color: white;
+  margin-left: 10rpx;
+}
+
+.moviesList image{
+  width: 180rpx;
+  height: 280rpx;
+  margin-bottom: 30rpx;
+}

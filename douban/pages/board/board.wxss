@@ -1,0 +1,48 @@
+/* pages/board/board.wxss */
+.slide-image{
+  width: 100%;
+  height: 100%;
+}
+
+swiper{
+  height: 600rpx;
+  width: 500rpx;
+  margin-left: 120rpx;
+}
+.board{
+  display: flex;
+  flex-direction: column;
+  
+}
+.board-item image{
+  width: 40rpx;
+  height: 40rpx; 
+}
+.board-item{
+  width: 620rpx;
+  height: 70rpx;
+  display: flex;
+  justify-content: space-between;
+  background: #FCFCFC;
+  margin-top: 40rpx;
+  margin-left: 60rpx;
+  padding: 30rpx 30rpx 0 30rpx;
+}
+
+.gather{
+  width: 620rpx;
+  height: 60rpx;
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx 30rpx 0 30rpx;
+   margin-top: 40rpx;
+  margin-left: 60rpx;
+}
+.gather>text:first-child{
+  font-weight: bold;
+}
+
+.gather>text:last-child{
+  color: gray;
+  font-size: 13px;
+}

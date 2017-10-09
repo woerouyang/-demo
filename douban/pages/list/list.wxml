@@ -1,0 +1,26 @@
+<!--pages/list/list.wxml-->
+<view class="container">
+      <loading hidden="{{hiddenLoading}}">正在加载</loading>
+      <view class="top">
+          <text>{{name}}</text>
+      </view>
+      <block wx:for="{{movies}}">
+      <navigator url="../item/item">
+        <view class="moviesList">
+              <view class="moviesContents">
+                  <image src="{{item.images.medium}}"></image>
+                  <view class="moviesText">  
+                      <text>{{item.title}}</text>
+                      <text>{{item.title}}({{item.year}})</text>
+                      <text>导演:{{item.directors[0].name}}</text>
+                  </view>
+              </view>
+              
+              <view class="average"><text>{{item.rating.average}}</text></view>
+            </view>
+      
+      </navigator>
+         
+      </block>
+
+</view>

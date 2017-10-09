@@ -1,0 +1,44 @@
+<!--pages/board/board.wxml-->
+<view class="classname">
+  <view class="slide">
+    <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item.images.large}}" class="slide-image" mode="scaleToFill" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+
+  </view>
+
+
+ <view class="board">
+      <view class="gather">
+        <text>豆瓣电影榜单集合</text>
+        <text>最新,最IN的影视信息收集~</text>
+      </view>
+      <navigator url="../list/list?type=in_theaters&name=正在热映">
+          <view class="board-item">
+            <text>正在热映</text>
+            <image src="../../images/arrowright.png"></image>
+          </view>
+      </navigator>
+      
+      <navigator url="../list/list?type=coming_soon&name=即将上映">
+        <view class="board-item">
+          <text>即将上映</text>
+          <image src="../../images/arrowright.png"></image>
+        </view>
+       
+      </navigator>
+
+      <navigator url="../list/list?type=top250&name=TOP250">
+         <view class="board-item">
+          <text>TOP250</text>
+          <image src="../../images/arrowright.png"></image>
+        </view>
+      </navigator>
+     
+     
+  </view>
+</view>

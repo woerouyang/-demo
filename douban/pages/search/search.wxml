@@ -1,0 +1,26 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+  
+<view class="section">
+  <input placeholder="请你输入关键信息" bindinput="getKey" auto-focus/>
+</view>
+  <button bindtap="searchKey">搜索</button>
+
+  <block wx:for="{{movies}}">
+        <navigator url="../item/item">
+              <view class="moviesList">
+                  <view class="moviesContents">
+                      <image src="{{item.images.medium}}"></image>
+                      <view class="moviesText">  
+                          <text>{{item.title}}</text>
+                          <text>{{item.title}}({{item.year}})</text>
+                          <text>{{item.directors[0].name}}</text>
+                      </view>
+                  </view>
+                  
+                  <view class="average"><text>{{item.rating.average}}</text></view>
+                </view>
+        </navigator>
+          
+      </block>
+</view>
